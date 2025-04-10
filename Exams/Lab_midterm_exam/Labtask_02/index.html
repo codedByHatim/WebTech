@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Crockett & Jones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">CROCKETT & JONES</div>
+        <div>CHECKOUT</div>
+    </div>
+    
+    <div id="success-message" class="success-message">
+        Your order has been placed successfully! Thank you for shopping with Crockett & Jones.
+    </div>
+    
+    <div class="checkout-container">
+        <form id="checkout-form" class="checkout-form">
+            <h2>Billing Details</h2>
+            
+            <div class="form-group">
+                <label for="full-name">Full Name *</label>
+                <input 
+                    type="text" 
+                    id="full-name" 
+                    name="full-name" 
+                    required 
+                    pattern="^[A-Za-z ]+$"
+                >
+                <div id="full-name-error" class="error-message">Please enter a valid name (letters only)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                >
+                <div id="email-error" class="error-message">Please enter a valid email address</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required 
+                    pattern="^[0-9]{10,15}$"
+                >
+                <div id="phone-error" class="error-message">Please enter a valid phone number (10-15 digits)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <input 
+                    type="text" 
+                    id="address" 
+                    name="address" 
+                    required
+                >
+                <div id="address-error" class="error-message">Please enter your address</div>
+            </div>
+            
+            <h2>Payment Information</h2>
+            
+            <div class="form-group">
+                <label for="card-number">Card Number *</label>
+                <input 
+                    type="text" 
+                    id="card-number" 
+                    name="card-number" 
+                    required 
+                    pattern="^[0-9]{16}$" 
+                    maxlength="16"
+                >
+                <div id="card-number-error" class="error-message">Please enter a valid 16-digit card number</div>
+            </div>
+            
+            <div class="card-details">
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date (MM/YYYY) *</label>
+                    <input 
+                        type="text" 
+                        id="expiry-date" 
+                        name="expiry-date" 
+                        required 
+                        placeholder="MM/YYYY"
+                        pattern="^(0[1-9]|1[0-2])\/20[2-9][0-9]$"
+                    >
+                    <div id="expiry-date-error" class="error-message">Please enter a valid future expiry date (MM/YYYY)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cvv">CVV *</label>
+                    <input 
+                        type="text" 
+                        id="cvv" 
+                        name="cvv" 
+                        required 
+                        pattern="^[0-9]{3}$" 
+                        maxlength="3"
+                    >
+                    <div id="cvv-error" class="error-message">Please enter a valid 3-digit CVV</div>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+        
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="07.jpgm" alt="Premium Leather Oxfords">
+                </div>
+                <div class="product-details">
+                    <div>Premium Leather Oxfords</div>
+                    <div class="product-price">£595.00</div>
+                </div>
+            </div>
+            
+            <div class="summary-row">
+                <div>Subtotal</div>
+                <div>£595.00</div>
+            </div>
+            
+            <div class="summary-row">
+                <div>Shipping</div>
+                <div>£15.00</div>
+            </div>
+            
+            <div class="summary-row">
+                <div>Tax</div>
+                <div>£122.00</div>
+            </div>
+            
+            <div class="summary-row summary-total">
+                <div>Total</div>
+                <div>£732.00</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

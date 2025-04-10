@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Loader</title>
+  <link rel="stylesheet" href="styles/task_loader.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📄 Task Loader For Crocket & Jones</h1>
+      
+
+      <p>Select an assignment or lab task to view it in the embedded window below.</p>
+    </header>
+
+    <section class="task-list">
+      <div class="task">
+        <span>📝 Assignment 1: CV using HTML & CSS</span>
+        <button onclick="loadTask('Assignment 01/index.html')">View</button>
+      </div>
+      <div class="task">
+        <span>🛒 Assignment 2: E-Commerce Landing Page</span>
+        <button onclick="loadTask('Assignment 02/index.html')">View</button>
+      </div>
+      <div class="task">
+        <span>💻 Lab Task 1: Landing Page using Bootstrap</span>
+        <button onclick="loadTask('Labtask_01/index.html')">View</button>
+      </div>
+      <div class="task">
+        <span>✅ Lab Task 2: Checkout Page with Validation</span>
+        <button onclick="loadTask('Labtask_02/index.html')">View</button>
+      </div>
+    </section>
+
+    <section class="iframe-wrapper">
+      <iframe id="taskFrame" src="" title="Task Viewer"></iframe>
+    </section>
+  </div>
+
+  <script src="scripts/task_loader.js"></script>
+</body>
+</html>
