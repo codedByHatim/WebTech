@@ -1,0 +1,70 @@
+/* Top Tagline Bar */
+.nav-top {
+  background-color: #111;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Main Navigation Bar */
+.main-nav {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.main-nav li {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-nav li.logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 40px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  font-family: 'Georgia', serif;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 300;
+}
