@@ -1,0 +1,17 @@
+<h2>Your Cart</h2>
+<ul>
+  <% for (let item of cart.generateArray()) { %>
+    <li><%= item.item.title %> - Qty: <%= item.qty %> - Price: $<%= item.price %></li>
+    <form method="POST" action="/cart/update">
+      <input type="hidden" name="id" value="<%= item.item._id %>">
+      <input type="number" name="qty" value="<%= item.qty %>" min="1">
+      <button type="submit">Update</button>
+    </form>
+    <form method="POST" action="/cart/remove">
+      <input type="hidden" name="id" value="<%= item.item._id %>">
+      <button type="submit">Remove</button>
+    </form>
+  <% } %>
+</ul>
+<h3>Total: $<%= cart.totalPrice %></h3>
+<a href="/checkout">Proceed to Checkout</a>

@@ -1,0 +1,119 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Container Layout */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Links and Buttons */
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #1d6fa5;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Forms */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form label {
+  font-weight: 600;
+}
+
+/* Product List */
+.product-list {
+  list-style: none;
+}
+.product-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-list li:last-child {
+  border-bottom: none;
+}
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Orders Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table th {
+  background-color: #f0f0f0;
+}
+.order-status {
+  font-weight: bold;
+  color: #2ecc71;
+}
+.order-status.pending {
+  color: #f39c12;
+}
+.order-status.failed {
+  color: #e74c3c;
+}
+
+/* Flash Messages (Optional) */
+.flash {
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #e1f5fe;
+  border: 1px solid #81d4fa;
+  color: #0277bd;
+  border-radius: 5px;
+}

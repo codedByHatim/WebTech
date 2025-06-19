@@ -1,0 +1,14 @@
+<h1>All Orders</h1>
+<ul>
+  <% orders.forEach(order => { %>
+    <li>
+      <strong><%= order.userId.name %></strong> - <%= order.createdAt.toDateString() %>
+      <ul>
+        <% order.items.forEach(item => { %>
+          <li><%= item.productId.title %> x <%= item.quantity %></li>
+        <% }) %>
+      </ul>
+      <strong>Total:</strong> $<%= order.totalPrice %>
+    </li>
+  <% }) %>
+</ul>
