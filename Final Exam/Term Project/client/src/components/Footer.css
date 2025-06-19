@@ -1,0 +1,96 @@
+.footer-section {
+  background: #f6f6f6;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+
+.footer-top > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter h3,
+.social-payment h3 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.newsletter input {
+  padding: 12px;
+  width: 80%;
+  max-width: 280px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  padding: 10px 30px;
+  background: white;
+  border: 2px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: black;
+  color: white;
+}
+
+.footer-logo-text img {
+  width: 80px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-text p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.social-payment .icons span {
+  font-size: 20px;
+  margin: 0 6px;
+}
+
+.payments img {
+  height: 24px;
+  margin: 6px;
+}
+
+.main-footer {
+  background: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.main-footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main-footer li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.main-footer li a:hover {
+  color: white;
+}

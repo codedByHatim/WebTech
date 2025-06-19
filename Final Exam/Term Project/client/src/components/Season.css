@@ -1,0 +1,47 @@
+.season-section {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.season-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.season-title {
+  font-family: 'Cursive', 'Brush Script MT', cursive;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.season-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.season-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.btn-dark {
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border: 2px solid #222;
+  transition: 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: #222;
+}
