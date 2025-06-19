@@ -1,8 +1,0 @@
-<h1>Edit Product</h1>
-<form method="POST" action="/admin/products/edit/<%= product._id %>">
-  <input name="title" value="<%= product.title %>" required />
-  <input name="price" value="<%= product.price %>" required />
-  <input name="description" value="<%= product.description %>" required />
-  <input name="imageUrl" value="<%= product.imageUrl %>" required />
-  <button type="submit">Save</button>
-</form>
