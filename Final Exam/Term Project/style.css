@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-top {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.main-nav .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+/* Product Grid */
+.product-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* New Season Section */
+.season-section {
+  background: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.season-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.season-title {
+  font-family: 'Cursive', 'Brush Script MT', cursive;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.season-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.season-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.btn-dark {
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border: 2px solid #222;
+  transition: 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: white;
+  color: #222;
+}
+/* Newsletter + Social Footer */
+.footer-section {
+  background: #f6f6f6;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+
+.footer-top > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.newsletter h3,
+.social-payment h3 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.newsletter input {
+  padding: 12px;
+  width: 80%;
+  max-width: 280px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  padding: 10px 30px;
+  background: white;
+  border: 2px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: black;
+  color: white;
+}
+
+.footer-logo-text img {
+  width: 80px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-text p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.social-payment .icons span {
+  font-size: 20px;
+  margin: 0 6px;
+}
+
+.payments img {
+  height: 24px;
+  margin: 6px;
+}
+
+/* Bottom Footer Links */
+.main-footer {
+  background: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.main-footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main-footer li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.main-footer li a:hover {
+  color: white;
+}
+
+
